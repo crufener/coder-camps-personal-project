@@ -32,6 +32,8 @@ app.use('/', routes);
 /*Route for users*/
 app.use('/user', users);
 
+
+
 /*Make the connection to the database and seed database*/
 mongoose.connect(dbUrl).then(() => {
     mongoose.connection.db.dropDatabase(() => {
@@ -57,3 +59,11 @@ mongoose.connect(dbUrl).then(() => {
 }).catch((err) => {
     console.error(err, err.message);
 });
+
+app.listen(3000, () => {
+    console.log(`
+        SERVER STARTED ON PORT 3000....
+        `)
+})
+
+export = app;

@@ -11,7 +11,7 @@ router.get('/', function (req, res) {
     });
 });
 router.get('/:id', function (req, res) {
-    var userId = req.param['id'];
+    var userId = req.params['_id'];
     console.log(userId);
     usersModel_1.default.findById(userId).then(function (user) {
         res.json(user);

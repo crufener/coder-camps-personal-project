@@ -43,3 +43,7 @@ mongoose.connect(dbUrl).then(function () {
 }).catch(function (err) {
     console.error(err, err.message);
 });
+app.listen(3000, function () {
+    console.log("\n        SERVER STARTED ON PORT 3000....\n        ");
+});
+module.exports = app;

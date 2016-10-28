@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 });
 /*GET user by the id*/
 router.get('/:id', (req, res) => {
-    let userId = req.param['id'];
+    let userId = req.params['_id'];
     console.log(userId);
     User.findById(userId).then((user) => {
         res.json(user);

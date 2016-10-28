@@ -1,0 +1,6 @@
+<h2>Home Page</h2>
+<hr>
+<ul>
+    <li ng-repeat="user in controller.users"><i class="material-icons">account_circle</i>{{user.name}}
+    <a ui-sref="user({id: user._id})">{{user._id}}</a></li>
+</ul>

@@ -4,8 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>personal-project</title>
-    <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap-theme.min.css">
     <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap-theme.min.css">
+
     <link rel="stylesheet" href="bower_components\angular-material\angular-material.min.css">
     <link rel="stylesheet" href="bower_components\animate.css\animate.min.css">
 
@@ -14,7 +15,7 @@
 <body>
 <div class="container">
     <nav>
-        <a href="/">homepage</a>
+        <a href="/">homepage</a> | <a ui-sref="user">home</a>
     </nav>
 <ui-view></ui-view>
 </div>
@@ -26,7 +27,7 @@
 <script src="bower_components\angular-animate\angular-animate.min.js"></script>
 <script src="bower_components\angular-aria\angular-aria.min.js"></script>
 <script src="bower_components\angular-messages\angular-messages.min.js"></script>
-<script src="ngApp/main.js"></script>
+<script src="ngApp/app.js"></script>
 <script src="ngApp/controllers/controllers.js"></script>
 <script src="ngApp/services/services.js"></script>
 </body>

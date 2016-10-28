@@ -1,0 +1,24 @@
+<form name="userForm" novalidate>
+  <div layout="row" layout-padding>
+    <md-input-container>
+     <label>Username</label>
+     <input name="username" ng-model="controller.user.username" md-maxlength="10" md-minlength="3" required>
+     <div ng-messages="userForm.username.$error">
+        <div ng-message="required">This is required.</div>
+        <div ng-message="md-maxlength">The username has to be less than 10 characters long.</div>
+        <div ng-message="md-minlength">Username must contain more than 3 characters</div>
+     </div>
+    </md-input-container>
+    <md-input-container>
+     <label>Password</label>
+     <input name="password" ng-model="controller.user.password" md-minlength="3" required>
+     <div ng-messages="userForm.password.$error">
+        <div ng-message="required">This is required.</div>
+        <div ng-message="md-minlength">Password must contain more than 3 characters</div>
+     </div>
+    </md-input-container>
+  </div>
+  <div>
+    <md-button class="md-raised md-primary">Login</md-button>
+  </div>
+</form>
